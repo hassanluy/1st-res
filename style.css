@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 15px;
+}
+    body{
+        background-color: honeydew;
+        margin: 0 .5rem;
+    }
+    .header{
+        text-align: center;
+    }
+    .hero{
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+    .child{
+        overflow: hidden;
+        position: relative;
+        background-color: white;
+        border-radius: .9rem;
+        margin: 1rem;
+        padding-top: 1rem;
+        padding-left: 1rem;
+        box-shadow: 3px 3px 10px black;
+        min-height: 14rem;
+        padding: 0 2rem;
+    }
+    .child .line{
+        border: 2px blue solid;
+        position:absolute;
+        width: 100%;
+        height: .1rem;
+        top: 0;
+        left: 0;
+    }
+    .header p:nth-child(1){
+        font-size: 2rem;
+        line-height: 1.5;
+    }
+    .child h1{
+        padding: 1rem 0;
+    }
+    .header h1{
+        margin: 1rem 0 ;
+    }   
+    .child img{
+        position: absolute;
+        bottom: 1rem;
+        right:1rem;
+    }
+    p{
+        color: lightgray;
+    }
+    .child p{
+        font-size: 1.1rem;
+        line-height: 1.5;
+    }
+    .child-2 .line{
+        border-color: brown;
+    }
+    .child-3 .line{
+        border-color: chartreuse;
+    }
+    .child-1 .line{
+    border-color: violet;
+    }
+    .header p:nth-child(3){
+        line-height: 1.5;
+        margin-bottom:1rem ;
+    }
+@media (max-width:375px) {
+ .hero{
+     flex-direction: column;
+ }
+ .child{
+    min-width: 270px;
+}   
+}
